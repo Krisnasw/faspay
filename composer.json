@@ -1,12 +1,8 @@
 {
-    "name": "glayzie/faspay",
+    "name": "krisnasw/faspay",
     "description": "A Laravel Package For Faspay Payment Gateway",
-    "authors": [
-        {
-            "name": "Krisnasw",
-            "email": "glayziie@gmail.com"
-        }
-    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=7.1.0",
         "guzzlehttp/guzzle": "^6.3",
@@ -17,8 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Glayzie\\Faspay\\": "src/"
+            "Krisnasw\\Faspay\\": "src/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
