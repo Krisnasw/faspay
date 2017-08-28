@@ -16,7 +16,7 @@ class FaspayServiceProvider extends ServiceProvider
     {
         //
         $this->publishes([
-                __DIR__.'../config/faspay.php' => config_path('faspay.php'),
+                __DIR__.'/../config/faspay.php' => config_path('faspay.php'),
             ]);
     }
 
