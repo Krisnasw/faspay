@@ -1,6 +1,6 @@
 <?php
 
-namespace Glayzie\Faspay;
+namespace Krisnasw\Faspay;
 
 use Carbon\Carbon;
 use GuzzleHttp\Client;

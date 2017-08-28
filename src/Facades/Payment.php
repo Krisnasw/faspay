@@ -1,6 +1,6 @@
 <?php
 
-namespace Glayzie\Faspay\Facades;
+namespace Krisnasw\Faspay\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

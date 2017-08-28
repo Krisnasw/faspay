@@ -7,20 +7,20 @@ This is a laravel package to communicate with [Faspay Payment Gateway API](https
 
 To get started with Faspay, run this command or add the package to your `composer.json`
 
-    composer require glayzie/faspay
+    composer require krisnasw/faspay
 
 ## Configuration
 
-After installing the Faspay package, register the `Glayzie\Faspay\FaspayServiceProvider` in your `config/app.php` file.
+After installing the Faspay package, register the `Krisnasw\Faspay\FaspayServiceProvider` in your `config/app.php` file.
 Also, add the `Faspay` and `Payment` facade to the `aliases` array in your `app` configuration file:
 ```php
-'Faspay' => Glayzie\Faspay\Facades\Faspay::class,
-'Payment' => Glayzie\Faspay\Facades\Payment::class,
+'Faspay' => Krisnasw\Faspay\Facades\Faspay::class,
+'Payment' => Krisnasw\Faspay\Facades\Payment::class,
 ```
 
 Finally publish the config file:
 
-    php artisan vendor:publish --provider="Glayzie\Faspay\FaspayServiceProvider"
+    php artisan vendor:publish --provider="Krisnasw\Faspay\FaspayServiceProvider"
 
 and change `merchant_id`, `merchant_name`, `user_id`, and `password` in the `config/faspay.php` with yours.
 
@@ -31,7 +31,7 @@ After all sets, use this Faspay package as follows:
 ```php
 // Customer class example. You can apply to any model you want.
 
-use Glayzie\Faspay\CustomerInterface;
+use Krisnasw\Faspay\CustomerInterface;
 
 class Customer implements CustomerInterface
 {
@@ -65,7 +65,7 @@ class Customer implements CustomerInterface
 ```php
 // Item class example. You can apply to any model you want.
 
-use Glayzie\Faspay\Payable;
+use Krisnasw\Faspay\Payable;
 
 class Item implements Payable
 {
@@ -103,7 +103,7 @@ Route::get('/', function () {
 });
 
 Route::get('/callback-notif', function(\Illuminate\Http\Request $request) {
-  return Faspay::notified($request, function(\Glayzie\Faspay\Notification $notification) {
+  return Faspay::notified($request, function(\Krisnasw\Faspay\Notification $notification) {
     return $notification;
   });
 });

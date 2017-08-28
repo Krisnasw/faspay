@@ -1,6 +1,6 @@
 <?php
 
-namespace Glayzie\Faspay;
+namespace Krisnasw\Faspay;
 
 use GuzzleHttp\Client as HttpClient;
 use Illuminate\Support\ServiceProvider;
