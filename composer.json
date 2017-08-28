@@ -1,0 +1,5 @@
+{
+    "name": "glayzie/faspay",
+    "description": "A Laravel Package For Faspay Payment Gateway",
+    "require": {}
+}
