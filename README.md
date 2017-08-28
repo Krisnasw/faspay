@@ -7,7 +7,7 @@ This is a laravel package to communicate with [Faspay Payment Gateway API](https
 
 To get started with Faspay, run this command or add the package to your `composer.json`
 
-    composer require krisnasw/faspay
+    composer require krisnasw/faspay dev-master
 
 ## Configuration
 
