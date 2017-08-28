@@ -1,5 +1,24 @@
 {
     "name": "glayzie/faspay",
     "description": "A Laravel Package For Faspay Payment Gateway",
-    "require": {}
+    "authors": [
+        {
+            "name": "Krisnasw",
+            "email": "glayziie@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "spatie/array-to-xml": "^2.6",
+        "illuminate/support": "5.4.*",
+        "nesbot/carbon": "^1.22",
+        "symfony/http-foundation": "3.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Glayzie\\Faspay\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
 }
